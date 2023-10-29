@@ -4,19 +4,23 @@
   --primary: #bc4123;
   --secondary: #2b3452;
 }
+
 body {
   margin: 0;
   padding: 20px;
   font-family: "Poppins";
   background: var(--secondary);
 }
+
 * {
   color: #fff;
   margin: 0;
 }
+
 p {
   margin: 20px 0;
 }
+
 button {
   border: 0;
   padding: 8px;
@@ -51,7 +55,10 @@ header nav a.active {
 }
 
 /* page content */
-
+main {
+  max-width: 1200px;
+  margin: 40px auto;
+}
 
 /* help layout */
 
