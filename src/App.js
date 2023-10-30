@@ -11,10 +11,12 @@ import HomePage from "./pages/Home";
 import Contact from "./pages/help/Contact";
 import HelpLayout from "./layouts/HelpLayout";
 import NotFound from "./pages/NotFound";
+import Careers, { careersLoader } from "./pages/careers/Careers";
 
 //layouts
 import RootLayout from "./layouts/RouteLayOut";
 import FaqPage from "./pages/help/Faq";
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -25,6 +27,7 @@ const router = createBrowserRouter(
         <Route path="contact" element={<Contact />}/>
         <Route path="faq" element={<FaqPage />}/>
       </Route>
+      <Route path="careers" element={<Careers />} loader={careersLoader}/>
       <Route path="*" element={<NotFound />}/>
     </Route>
   )
