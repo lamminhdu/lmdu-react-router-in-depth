@@ -22,5 +22,9 @@ export const careerDetailsLoader = async( {params} ) => {
 
     const res = await fetch("http://localhost:4000/careers/" + id)
     
+    if (!res.ok) {
+        throw Error("Cound not fecth career data")
+    }
+
     return res.json()
 }
